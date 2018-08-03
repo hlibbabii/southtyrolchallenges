@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GameOfAlps - ADMIN</title>
+  </head>
+  <body>
+    <button role="button" onclick="sendBeacon()">BEACON</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    const socket = io();
+
+    function sendBeacon() {
+      socket.emit('sendBeacon');
+    }
+    </script>
+  </body>
+</html>
