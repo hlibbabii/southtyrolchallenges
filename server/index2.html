@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GameOfAlps</title>
+  </head>
+  <body>
+    <h1>GameOfAlps</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      const x = document.getElementById('demo');
+      socket.on('beacon', function() {
+        alert('Beacon received!!!')
+      });
+    </script>
+  </body>
+</html>
